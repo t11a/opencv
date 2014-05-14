@@ -14,14 +14,14 @@ using namespace std;
 
 int main(int argc, const char * argv[])
 {
-    VideoCapture cap(0);
+  VideoCapture cap(0);
     
-    Mat frame;
+  Mat frame;
     
-    while (waitKey(1) != 'q') {
-        cap >> frame;
-        imshow("sample", frame);
-    }
-    return 0;
+  while (waitKey(1) != 'q') {
+    cap >> frame;
+    imshow("sample", frame);
+  }
+  return 0;
 }
 
